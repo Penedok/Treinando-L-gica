@@ -1,0 +1,98 @@
+
+
+<!--  eu fiz o exercicio
+
+<meta charset="UTF-8">
+<input type="text" id="nome" placeholder="Digite o nome do sue time">
+<input type="number" id="vitoria" placeholder="Digite o número de vitoria do seu time">
+<input type="number" id="empates" placeholder="Digite o numero de empates do seu time">
+<button onclick="resultado()">Resultado</button>
+<br>
+<br>
+
+<label class="texto"></label>
+
+<script>
+
+function pulaLinha(){
+    document.write("<br>");
+    document.write("<br>");
+
+}
+function mostra(frase){
+ return   document.write(frase);
+    pulaLinha();
+
+}
+
+
+
+function resultado(){
+    var time = document.getElementById("nome").value;
+    var vitorias = document.getElementById("vitoria").value;
+    var empates = document.getElementById("empates"). value;
+    var texto = document.querySelector(".texto")
+
+
+    var vitoriasNumero = parseInt(vitorias)
+    var empatesNumero = parseInt(empates)
+
+    var resultadoPontos = vitoriasNumero *3 + empatesNumero;
+
+    
+
+    if (resultadoPontos > 20 ){
+        texto.innerHTML = " A pontuação do  "  +   time + " é " + resultadoPontos + " pontos. O seu time está no caminho certo para levar a taça de campeão."
+     
+
+    }
+    else(
+        texto.innerHTML =  " A pontuação do  "  +   time + " é " + resultadoPontos + " pontos. A pontuação do seu time está critica."
+    )
+
+
+
+}
+</script>
+-->
+
+
+
+<meta charset="UTF-8">
+
+
+
+<script>
+
+
+
+function pulaLinha(){
+    document.write("<br>");
+    document.write("<br>");
+
+}
+function mostra(frase){
+   document.write(frase);
+    pulaLinha();
+
+}
+
+
+var vitorias = parseInt(prompt("Entre com o numero de vitorias."));
+var empates = parseInt (prompt("Entre com o numero de empates."));
+
+var pontos = vitorias *3 + empates;
+
+mostra("Os pontos do seu time é " + pontos)
+
+if (pontos > 28){
+    mostra("O seu time está indo muito bem")
+}
+if (pontos < 28){
+    mostra ("Os pontos do seu time é preocupante")
+
+}
+if(pontos == 28){
+    mostra(" a pontuação está igual ao ano passado")
+}
+</script>

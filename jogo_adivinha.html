@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulaLinha(){
+    document.write("<br>");
+    document.write("<br>");
+
+}
+function mostra(frase){
+    document.write(frase);
+    pulaLinha();
+
+}
+
+var numeroPensado = Math.round(Math.random() * 10);                                               // pega um numero da API da biblioteca e arredonda os numeros multiplicados por 10
+
+console.log(numeroPensado);
+
+var contador = 1;
+
+
+while (contador <= 3){
+    var numeroChute = parseInt(prompt("Chute um numero de 0 a 10"))
+
+
+if (numeroPensado == numeroChute){
+    mostra ("Uau, você é bom mesmo")
+    break
+}
+else {
+    if (contador == 3){
+        mostra ("você atingiu o numero de tentativas")
+    }else{
+        alert ("Você errou, quer tentar novamente?")
+    }
+} 
+
+    contador ++
+}
+
+
+
+
+</script>
