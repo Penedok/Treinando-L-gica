@@ -1,2 +1,2 @@
-# Treinando-L-gica
-com js
+# Treinando-Logica
+com js dentro do html
